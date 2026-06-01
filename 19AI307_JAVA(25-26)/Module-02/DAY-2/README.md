@@ -30,7 +30,8 @@ Program to implement a Class and Objects using Java
 Developed by: VAISHNAVIDEVI V 
 RegisterNumber: 212223040230  
 */
-
+```
+```
 public class Main{
     static void printst(){
         System.out.println("I am static");
