@@ -1,94 +1,79 @@
-# Ex.No:2(A) CLASS AND OBJECT
+# Ex.No:1(B) CONDITIONAL STATEMENT
 
 ## QUESTION:
-Write a Java program to demonstrate the concept of **class and object** by storing and displaying vehicle details.
-
----
+Write a Java program to determine the type of triangle (Equilateral, Isosceles, Scalene) using conditional statements.
 
 ## AIM:
-To write a Java program to demonstrate the **class and object concept by creating objects and accessing their attributes**.
-
----
+To write a Java program to determine the type of triangle using conditional statements.
 
 ## ALGORITHM :
-1. Start the program.  
-2. Import the necessary package `java.util`.  
-3. Create a class named `Main`.  
-4. Define an inner class `Vehicle` with attributes `number`, `type`, and `owner`.  
-5. Inside the `main()` method create a `Scanner` object.  
-6. Create the first object `v1` of class `Vehicle`.  
-7. Read vehicle number, type, and owner name for `v1`.  
-8. Create the second object `v2` of class `Vehicle`.  
-9. Read vehicle number, type, and owner name for `v2`.  
-10. Display the details of both vehicles using the object variables.  
-11. Stop the program.
+1.	Start the program.
+2.	Import the necessary package java.util.
+3.	Create a class named Main.
+4.	Inside the main() method, create a Scanner object to read input.
+5.	Read three integer values representing the sides of the triangle (h, b, w).
+6.	Check if the given sides satisfy the triangle condition : (h + b > w) AND (b + w > h) AND (w + h > b).
+7.	If the condition is true:
+   - If all three sides are equal → print Equilateral.
+   - Else if any two sides are equal → print Isosceles.
+   - Else → print Scalene.
+8. If the triangle condition is false → print Not a triangle.
 
----
+9. Stop the program.
+
+
+
+
 
 ## PROGRAM:
-
-```java
+ ```
 /*
-Program to implement a Class and Objects using Java
+Program to implement a conditional statement using Java
 Developed by: VAISHNAVIDEVI V
-RegisterNumber: 212223040230  
+RegisterNumber: 212223040230
 */
-
-import java.util.Scanner;
-
-public class Main {
-    public static class Vehicle{
-        String number;
-        String type;
-        String owner;
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        Vehicle v1 = new Vehicle();
-        v1.number = sc.next();
-        v1.type = sc.next();
-        v1.owner = sc.next();
-
-        Vehicle v2 = new Vehicle();
-        v2.number = sc.next();
-        v2.type = sc.next();
-        v2.owner = sc.next();
-
-        System.out.println(v1.number + " | " + v1.type + " | " + v1.owner);
-        System.out.println(v2.number + " | " + v2.type + " | " + v2.owner);
-
-        sc.close();
-    }
-}
 ```
 
----
+```java
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] aths){
+        Scanner sc = new Scanner(System.in);
+        
+        int h = sc.nextInt();
+        int b = sc.nextInt();
+        int w = sc.nextInt();
+        
+        if(h+b>w && b+w>h && w+h>b){
+        if(h == b && b == w)System.out.println("Equilateral");
+        else if(h==b || w==h ||b==w)System.out.println("Isosceles");
+        else System.out.println("Scalene");
+        }
+        else System.out.println("Not a triangle");
+    }
+}
+
+```
 
 ## SOURCE CODE:
 
 Compile the program using
-
-```
 javac Main.java
-```
 
 Run the program using
-
-```
 java Main
-```
 
----
+
+
+
+
 
 ## OUTPUT:
+<img width="393" height="151" alt="image" src="https://github.com/user-attachments/assets/256ed377-6ded-4d79-bf5a-809e703dce7a" />
 
-<img width="800" height="243" alt="image" src="https://github.com/user-attachments/assets/5df587ce-7eee-47ca-86e2-f33f2326dbae" />
 
-
----
 
 ## RESULT:
+Thus, the Java program to determine the type of triangle using conditional statements was executed successfully and the output was verified.
 
-Thus, the Java program to demonstrate the **class and object concept** was executed successfully and the output was verified.
