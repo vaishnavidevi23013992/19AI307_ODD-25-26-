@@ -34,7 +34,8 @@ Program to implement a Variable scope and Constructor using Java
 Developed by: VAISHNAVIDEVI V
 RegisterNumber: 212223040230
 */
-
+```
+```
 import java.util.Scanner;
 
 class Employee{
